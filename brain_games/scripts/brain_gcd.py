@@ -5,6 +5,8 @@ import random
 
 import prompt
 
+import math
+
 
 def main():
     print("Welcome to the Brain Games!")
@@ -15,15 +17,8 @@ def main():
     while count < 3:
         number1 = random.randint(1, 100)
         number2 = random.randint(1, 100)
-        string = '+-*'
-        sign = random.choice(string)
-        if sign == '+':
-            result = number1 + number2
-        elif sign == '-':
-            result = number1 - number2
-        elif sign == '*':
-            result = number1 * number2
-        print("Question: {0} {1} {2}".format(str(number1), sign, str(number2)))
+        result = math.gcd(number1, number2)
+        print("Question: {0} {1}".format(str(number1), str(number2)))
         user_answer = prompt.string("Your answer: ")
         if user_answer == str(result):
             print('Correct!')
