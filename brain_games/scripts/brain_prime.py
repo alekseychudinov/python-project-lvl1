@@ -24,13 +24,13 @@ def main():
         elif result == "yes" and user_answer == "no":
             print(
                 "'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "  # noqa
-                + name  # noqa
+                + name + "!" # noqa
             )
             return
         elif result == "no" and user_answer == "yes":
             print(
                 "'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "  # noqa
-                + name  # noqa
+                + name + "!" # noqa
             )
             return
         else:
@@ -38,7 +38,7 @@ def main():
                 "'"
                 + user_answer # noqa
                 + "' is wrong answer ;(.\nLet's try again, " # noqa
-                + name # noqa
+                + name + "!" # noqa
             )
             return
     print("Congratulations, {0}!".format(name))
