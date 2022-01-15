@@ -36,9 +36,9 @@ def main():
         else:
             print(
                 "'"
-                + user_answer
-                + "' is wrong answer ;(.\nLet's try again, "
-                + name
+                + user_answer # noqa
+                + "' is wrong answer ;(.\nLet's try again, " # noqa
+                + name # noqa
             )
             return
     print("Congratulations, {0}!".format(name))
