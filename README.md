@@ -6,3 +6,5 @@
 [![test-my-project](https://github.com/alekseychudinov/python-project-lvl1/actions/workflows/first_project-check.yml/badge.svg)](https://github.com/alekseychudinov/python-project-lvl1/actions/workflows/first_project-check.yml)
 
 https://asciinema.org/a/461827
+
+https://asciinema.org/a/461949
