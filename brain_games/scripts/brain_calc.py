@@ -10,23 +10,23 @@ def main():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print("Hello, {0}!".format(name))
-    print('What is the result of the expression?')
+    print("What is the result of the expression?")
     count = 0
     while count < 3:
         number1 = random.randint(1, 100)
         number2 = random.randint(1, 100)
-        string = '+-*'
+        string = "+-*"
         sign = random.choice(string)
-        if sign == '+':
+        if sign == "+":
             result = number1 + number2
-        elif sign == '-':
+        elif sign == "-":
             result = number1 - number2
-        elif sign == '*':
+        elif sign == "*":
             result = number1 * number2
         print("Question: {0} {1} {2}".format(str(number1), sign, str(number2)))
         user_answer = prompt.string("Your answer: ")
         if user_answer == str(result):
-            print('Correct!')
+            print("Correct!")
             count += 1
         else:
             print(
