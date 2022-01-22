@@ -17,14 +17,14 @@ def game_prime(name):
         elif result == "yes" and user_answer == "no":
             print(
                 "'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "  # noqa
-                + name
+                + name  # noqa
                 + "!"  # noqa
             )
             return
         elif result == "no" and user_answer == "yes":
             print(
                 "'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "  # noqa
-                + name
+                + name  # noqa
                 + "!"  # noqa
             )
             return
@@ -33,7 +33,7 @@ def game_prime(name):
                 "'"
                 + user_answer  # noqa
                 + "' is wrong answer ;(.\nLet's try again, "  # noqa
-                + name
+                + name  # noqa
                 + "!"  # noqa
             )
             return

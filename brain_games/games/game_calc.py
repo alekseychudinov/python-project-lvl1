@@ -22,11 +22,10 @@ def game_calc(name):
             print("Correct!")
             count += 1
         else:
-            f"'{user_answer}' is wrong answer ;(. Correct answer was '{result}'.\nLet's try again, {name}!"  # noqa
-            # print(
-            #     "'{0}' is wrong answer ;(. Correct answer was '{1}'.\nLet's try again, {2}!".format(  # noqa
-            #         user_answer, result, name
-            #     )
-            # )
+            print(
+                "'{0}' is wrong answer ;(. Correct answer was '{1}'.\nLet's try again, {2}!".format(  # noqa
+                    user_answer, result, name
+                )
+            )
             return
     print("Congratulations, {0}!".format(name))
