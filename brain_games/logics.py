@@ -24,7 +24,6 @@ def game_select(game):
 
 def end_of_game(game, user_answer, result, name):
     endgame = [0, ""]
-
     if game == "calc" or "gcd" or "progression":
         if user_answer == str(result):
             endgame[1] = "Correct!"
@@ -35,8 +34,7 @@ def end_of_game(game, user_answer, result, name):
             ] = "'{0}' is wrong answer ;(. Correct answer was '{1}'.\nLet's try again, {2}!".format(  # noqa
                 user_answer, result, name
             )
-
-    elif game == "prime" or "even":
+    else:
         if result == user_answer:
             endgame[1] = "Correct!"
             endgame[0] = 1
