@@ -1,5 +1,4 @@
 import prompt
-
 from brain_games.greetings import greetings
 
 
