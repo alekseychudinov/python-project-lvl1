@@ -1,10 +1,6 @@
 import random
 
-from brain_games.end_answer_yes_or_no import end_answer_yes_or_no
-
-greeting_prime = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-end_prime = end_answer_yes_or_no
+greeting = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -14,7 +10,7 @@ def is_prime(number):
     return "yes" if d == number else "no"
 
 
-def game_prime():
+def game_base():
     number = random.randint(2, 100)
     result = is_prime(number)
     question = str(number)

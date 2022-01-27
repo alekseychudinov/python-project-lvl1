@@ -1,6 +1,6 @@
-def end_answer_number(user_answer, result, name):
+def end_of_game(user_answer, result, name):
     endgame = [0, ""]
-    if user_answer == str(result):
+    if result == user_answer:
         endgame[1] = "Correct!"
         endgame[0] = 1
     else:

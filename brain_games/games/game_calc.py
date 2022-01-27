@@ -1,13 +1,9 @@
 import random
 
-from brain_games.end_answer_number import end_answer_number
-
-greeting_calc = "What is the result of the expression?"
-
-end_calc = end_answer_number
+greeting = "What is the result of the expression?"
 
 
-def game_calc():
+def game_base():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     string = "+-*"
@@ -20,4 +16,5 @@ def game_calc():
     elif sign == "*":
         result = number1 * number2
     question = "{0} {1} {2}".format(str(number1), sign, str(number2))
+    result = str(result)
     return [result, question]

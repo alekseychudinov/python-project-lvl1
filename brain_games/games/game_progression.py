@@ -1,13 +1,9 @@
 import random
 
-from brain_games.end_answer_number import end_answer_number
-
-greeting_progression = "What number is missing in the progression?"
-
-end_progression = end_answer_number
+greeting = "What number is missing in the progression?"
 
 
-def game_progression():
+def game_base():
     length_progression = random.randint(5, 15)
     index_of_skip_element = random.randint(0, length_progression - 1)
     step_progression = random.randint(1, 10)
@@ -25,4 +21,5 @@ def game_progression():
         counter += 1
     result = progression[index_of_skip_element]
     question = str_progression
+    result = str(result)
     return [result, question]
