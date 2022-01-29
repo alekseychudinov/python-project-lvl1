@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from brain_games.games import game_calc
-from brain_games.logics import logics
+from brain_games.platform import move
 
 
 def main():
-    return logics(game_calc)
+    return move(game_calc)
 
 
 if __name__ == "__main__":
