@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games import game_even
-from brain_games.platform import move
+from brain_games.engine import run
+from brain_games.games import even
 
 
 def main():
-    return move(game_even)
+    return run(even)
 
 
 if __name__ == "__main__":

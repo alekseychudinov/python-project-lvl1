@@ -1,20 +1,20 @@
 import random
 
-RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-NUMBER_MIN = 2
-NUMBER_MAX = 100
+LOWER_BOUND = 2
+UPPER_BOUND = 100
 
 
 def is_prime(number):
     d = 2
     while number % d != 0:
         d += 1
-    return True if d == number else False
+    return d == number
 
 
 def get_correct_answer_and_question():
-    number = random.randint(NUMBER_MIN, NUMBER_MAX)
+    number = random.randint(LOWER_BOUND, UPPER_BOUND)
     if is_prime(number):
         result = "yes"
     else:

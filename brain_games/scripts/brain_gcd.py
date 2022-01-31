@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games import game_gcd
-from brain_games.platform import move
+from brain_games.engine import run
+from brain_games.games import gcd
 
 
 def main():
-    return move(game_gcd)
+    return run(gcd)
 
 
 if __name__ == "__main__":
